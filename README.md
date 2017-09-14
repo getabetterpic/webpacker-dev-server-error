@@ -6,6 +6,7 @@
 
 ## Steps to reproduce
 
+1. Run `bundle install` and `yarn install` to install dependencies.
 1. Start server in one terminal: `rails s`
 1. Go to [localhost:3000](http://localhost:3000)
 1. Open dev tools. Should see the webpacker hello world message in console.
