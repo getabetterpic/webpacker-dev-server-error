@@ -1,24 +1,23 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby version => 2.4.0
 
-Things you may want to cover:
+* System dependencies => Yarn
 
-* Ruby version
+## Steps to reproduce
 
-* System dependencies
+1. Start server in one terminal: `rails s`
+1. Go to [localhost:3000](http://localhost:3000)
+1. Open dev tools. Should see the webpacker hello world message in console.
+1. While leaving the rails server running, in another terminal start the webpack dev server: `./bin/webpack-dev-server`
+1. Refresh the page. Should still see the webpacker hello world message in console.
+1. Stop the webpack dev server.
+1. Refresh the page again. Now browser complains about not being able to find the application pack.
 
-* Configuration
+## Problem
 
-* Database creation
+After starting the webpack dev server then quitting, webpack no longer serves the correct packs automatically.
 
-* Database initialization
+## Expected behaviour
 
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+The background webpack service should continue serving the correct packs after quitting the webpack dev server.
