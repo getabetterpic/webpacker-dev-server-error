@@ -1,0 +1,10 @@
+{
+  "name": "webpacker-dev-server-error",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^3.0.1"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "^2.8.1"
+  }
+}
